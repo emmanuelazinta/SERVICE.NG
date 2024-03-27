@@ -1,0 +1,53 @@
+.header{
+    background-color: rgb(3, 47, 3);
+    color: #fff;
+    padding: 15px 0px;
+    
+}
+.header h1{
+    padding-left: 20px;
+}
+.all{
+    justify-content: center;
+    margin-top: 30px;
+}
+.addservice{
+    width: 100%;
+    box-shadow: 2px 2px 7px;
+    height: 380px;
+    
+    margin-left: 15px;
+    margin-right: 15px;
+    /* margin: 30px 0px 0px 30px; */
+
+}
+.addservice h3{
+    text-align: center;
+    font-weight: bold;
+}
+
+form{
+    padding-left: 20px;
+}
+.addservice button{
+    margin: 30px 0px 0px 15px; 
+    background-color:rgb(3, 47, 3); 
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    /* padding: 5px 15px; */
+    width: 20%;
+}
+input{
+    width: 100%;
+}
+.button1{
+    
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+.button2{
+    
+    font-size: 12px;
+
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="css\main.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="header">
+            <h1>SERVICE.NG</h1>
+        </div>
+        <div class="row all">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 addservice">
+
+                    <div class="form" id="myform">
+                        <h3>ADD SERVICE</h3>
+                        <form method="POST" action="#">
+                            <label>NAME</label><br>
+                            <input id="name" type="text"><br>
+                            <label>ADDRESS</label><br>
+                            <input id="address" type="text"><br>
+                            <label>AMOUNT</label><br>
+                            <input id="amount" type="number"><br>
+                            <label>STATE</label><br>
+                            <select id="selectors" >
+                                <option>ENUGU</option>
+                                <option>TARABA</option>
+                                <option>ADAMAWA</option>
+                            </select>
+                        </form>
+                        <button type="submit"onclick="clicked();">ADD</button>
+                       
+                    </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="table">
+
+
+
+                    <table class="table table-striped table-bordered table-responsive">
+                        <thead>
+                            <td>S/N</td>
+                            <td>Name of Services</td>
+                            <td>ADDRESS</td>
+                            <td>AMOUNT</td>
+                            <td>ACTION</td>
+                        </thead>
+                            <tbody id="table">
+                            <tr>
+                                <td>1</td>
+                                <td>SAMSON SUCCESS</td>
+                                <td>DONGA ROAD JALINGO</td>
+                                <td>#3,000.00</td>
+                                <td><button class="btn btn-primary button1">Edit</button> <button class="btn btn-danger button2">Delete</button></td>
+
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>EMMANUEL AZINTA</td>
+                                <td>DONGA ROAD JALINGO</td>
+                                <td>$52,000.000</td>
+                                <td><button class="btn btn-primary button1" onclick="edit()">Edit</button> <button class="btn btn-danger button2">Delete</button></td>
+
+                            </tr>
+
+                            <tr class="tableroww">
+                                <td>3</td>
+                                <td>SHADRACK JAFFSON</td>
+                                <td>DINYAVO JALINGO MILE 6 BY PASS</td>
+                                <td>#20,000.00</td>
+                                <td><div id="btn"><button id="btn1" class="btn btn-primary button1">Edit</button> 
+                                    <button data-="" id="btn2" class="btn btn-danger button2" onclick="del(this)">Delete</button> </div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="JS\main.js"></script>
+</body>
+
+</html>
